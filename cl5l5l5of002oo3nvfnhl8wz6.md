@@ -26,7 +26,7 @@ RecyclerView는 ViewHolder를 강제하는 것 외에도 삭제 생성을 반복
 |-|-|-|
 |아이템 표현 방식|화면에서 사라지고 나타날 때마다 삭제 및 생성 반복|화면에서 사라진 아이템의 틀을 새로 보여주는 아이템의 틀로 재사용|
 |ViewHolder 구현여부|선택|필수|
-# 기본 사용법
+## RecyclerView
 ListView와 달리 RecyclerView는
 1. ViewHolder를 무조건 구현해야 한다.
 2. layoutmanager를 통해 가로·세로 리스트(linearlayoutmanager), 그리드 리스트(gridlayoutmanager), 각 크기가 다양한 그리드 리스트(staggeredlayoutmanager)를 만들 수 있다.
@@ -36,7 +36,7 @@ ListView와 달리 RecyclerView는
 6. 리스트를 보여주는 퍼포먼스가 보다 빨라졌다.
 
 \- [Kishore C S](https://medium.com/@kish.imss/listview-vs-recyclerview-2965d50b363)
-## 구성요소
+# 리사이클러뷰 구성요소
 - data class : 아이템에 반영할 데이터
 - data list : 데이터를 담는 리스트(보통 ArrayList)
 - item layout : 리스트 각 아이템의 디자인인 아이템 틀
@@ -51,8 +51,8 @@ ListView와 달리 RecyclerView는
   <br>
   한 아이템이 고유의 값(eg. id value)을 가지게 해 선택, 삭제 등의 작업을 용이하게 할 수 있도록 아이템 틀을 객체화함.
 
-## 리사이클러뷰 만들기
-### 흐름
+# 리사이클러뷰 만들기
+## 만드는 순서
 1. 액티비티 레이아웃 recyclerView 추가 (xml)
 2. 아이템의 레이아웃 만들기 (xml)
 3. 아이템의 데이터 클래스 만들기 (java/kotlin)
@@ -75,8 +75,8 @@ ListView와 달리 RecyclerView는
   - Adapter constructor(생성자)
 5. 액티비티에서 adapter와 layoutManager 연결하기(java/kotlin) 
 
-### 코드
-#### Member 아이템 클래스
+## 코드
+### Member 아이템 클래스
 ```
 public class Member {
     String name;
@@ -114,7 +114,7 @@ public class Member {
     }
 }
 ```
-#### CustomAdapter
+### CustomAdapter
 ```
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
     ArrayList<Member> members;
@@ -175,7 +175,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 line 48에 세번째 파라미터인 false를 하지 않으면 아래 에러가 떠서 빌드가 되지 않는다.
 >java.lang.IllegalStateException: ViewHolder views must not be attached when created. Ensure that you are not passing 'true' to the **attachToRoot**
 
-#### MainActivity
+### MainActivity
 ```
 RecyclerView recyclerView;
 ArrayList<Member> members = new ArrayList<>();
