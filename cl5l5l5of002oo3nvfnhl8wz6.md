@@ -41,12 +41,14 @@ ListView와 달리 RecyclerView는
 - data list : 데이터를 담는 리스트(보통 ArrayList)
 - item layout : 리스트 각 아이템의 디자인인 아이템 틀
 - ViewHolder : 틀에 원하는 대로 데이터를 넣는 것
+  <br>
   adapter 안에 위치
   <br>
   findViewById 메소드 처럼 xml과 데이터를 연결함.
 - adapter : 데이터와 뷰홀더를 연결해주는 어댑터
 - layoutManager : 리스트를 레이아웃에 보여주기 위한 것
 - LayoutInflater : 아이템 레이아웃을 팽창시켜 아이템 객체 만듦
+  <br>
   ViewHolder 안에 위치. 말 그대로 레이아웃을 팽창, 부풀리는 것.
   <br>
   한 아이템이 고유의 값(eg. id value)을 가지게 해 선택, 삭제 등의 작업을 용이하게 할 수 있도록 아이템 틀을 객체화함.
@@ -56,10 +58,12 @@ ListView와 달리 RecyclerView는
 1. 액티비티 레이아웃 recyclerView 추가 (xml)
 2. 아이템의 레이아웃 만들기 (xml)
 3. 아이템의 데이터 클래스 만들기 (java/kotlin)
+  <br>
   데이터를 넣을 변수 & 생성자 & getter,setter를 생성한다.
 4. recyclerView의 adapter 만들기 (java/kotlin)
+  <br>
   Adapter를 상속받은 CustomAdapter를 생성한다.
-
+  <br>
   이때 반드시 생성되는 method가 있다.
   <br>
   - onCreateViewHolder : layoutInflater로 xml을 객체화하는 작업. ViewHolder를 생성해 return.
@@ -67,7 +71,7 @@ ListView와 달리 RecyclerView는
   - onBindViewHolder : xml 내 위젯과 데이터를 묶는 작업. 각 item position에 해당하는 data를 ViewHolder의 item에 표시.
   <br>
   - getItemCount : 전체 데이터의 개수 return.
-
+  <br>
   그 외 필요한 것들
   <br>
   - ViewHolder에 대한 (inner) class : xml의 위젯 선언과 id값 연결하는 작업. 위젯에 대한 이벤트 또한 제어. 
