@@ -156,7 +156,7 @@ protected void onCreate(Bundle savedInstanceState) {
         }
     }
 ```
-### Manifest
+### AndroidManifest
 MainActivity에 launchMode설정 (SharedPreferences 사용 안 하는 걸 전제로 하기 때문)
 ```
 <activity
@@ -171,7 +171,7 @@ MainActivity에 launchMode설정 (SharedPreferences 사용 안 하는 걸 전제
 ```
 ## 결과
 ![c_item.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1657981838752/Uw-XW5JXu.png align="center")
-## Update 수정
+# Update 수정
 ## 동작
 아이템을 클릭하면 정보를 수정 액티비티로 이동한다.
 <br>
