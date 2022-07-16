@@ -26,7 +26,7 @@ RecyclerView는 ViewHolder를 강제하는 것 외에도 삭제 생성을 반복
 |-|-|-|
 |아이템 표현 방식|화면에서 사라지고 나타날 때마다 삭제 및 생성 반복|화면에서 사라진 아이템의 틀을 새로 보여주는 아이템의 틀로 재사용|
 |ViewHolder 구현여부|선택|필수|
-# 리사이클러뷰 기본 사용법
+# 기본 사용법
 ListView와 달리 RecyclerView는
 1. ViewHolder를 무조건 구현해야 한다.
 2. layoutmanager를 통해 가로·세로 리스트(linearlayoutmanager), 그리드 리스트(gridlayoutmanager), 각 크기가 다양한 그리드 리스트(staggeredlayoutmanager)를 만들 수 있다.
@@ -51,7 +51,7 @@ ListView와 달리 RecyclerView는
   <br>
   한 아이템이 고유의 값(eg. id value)을 가지게 해 선택, 삭제 등의 작업을 용이하게 할 수 있도록 아이템 틀을 객체화함.
 
-## 사용법
+## 리사이클러뷰 만들기
 ### 흐름
 1. 액티비티 레이아웃 recyclerView 추가 (xml)
 2. 아이템의 레이아웃 만들기 (xml)
