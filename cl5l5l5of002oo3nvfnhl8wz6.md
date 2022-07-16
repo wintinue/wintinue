@@ -113,7 +113,7 @@ public class Member {
     }
 }
 ```
-### adapter code
+#### adapter code
 ```
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
     ArrayList<Member> members;
