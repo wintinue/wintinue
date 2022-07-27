@@ -3,11 +3,11 @@
 깃 커밋 메시지는 함께 협업하는 사람 뿐 아니라 미래의 나를 위해서도 어떤 변경사항이 있는지 읽기 쉽고 파악하기 쉽게 작성해야 한다.
 
 그런 의미에서 커밋 메시지를 남기는 규칙을 정해놓으면 편하다.
-# 커밋 메시지 규칙
+## 커밋 메시지 규칙
 여럿이서 작업하는 프로젝트인 경우 커밋 규칙을 정하고 규칙에 따라 메시지를 작성하지만, 개인 프로젝트를 할 때에는 `summary는 영어로, description은 한글로, emoji로 한눈에` 라는 나름의 규칙을 가지고 작업하고 있다.
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658170163814/T36YnbWXm.png align="center")
 커밋을 한줄로 나타내는 부분을 summary, 세부 설명을 description이라고 한다. summary만 작성해도 되지만, 어떤 것들이 변경되었는지 자세히 기록해두기 위해 웬만하면 description도 함께 적는 편이다.
-# summary
+## summary
 summary를 굳이 영어로 쓰는 이유는 어떤 커밋인지 한눈에 알아보기 편해서이다. 왠지 개발자면 영어를 써야되지 않을까 하는 생각에서 출발했지만, 실제로 아래 규칙을 지키며 작성해보니 어떤 종류의 커밋인지 파악하기 용이했다.
 
 주요 규칙은 다음과 같다.
@@ -27,7 +27,7 @@ summary를 굳이 영어로 쓰는 이유는 어떤 커밋인지 한눈에 알�
 - Update : 비즈니스 로직, 라이브러리 등 업데이트 시
 - Correct : 타입, 이름, 문법 오류 등 수정 시
 
-# description
+## description
 이 커밋에서 있었던 큼지막한 변경사항을 적는다. 짧고 간결하게 작성한 summary를 풀어서 적되, description만 보고도 어떤 작업을 했는지 파악할 수 있도록 유념하며 작성한다.
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658170486740/FB3p23Fd8.png align="center")
 개인적으로 아래와 같은 규칙을 두고 작성하는 편이다.
@@ -35,19 +35,19 @@ summary를 굳이 영어로 쓰는 이유는 어떤 커밋인지 한눈에 알�
 - 주어, 목적어, 서술어를 명확히 하기
 - 변경사항이 있다면 before, after 명시하기 (ex) `함수 A 리턴값 타입 변경 : int → float` 또는 `함수 A 리턴값 타입 int에서 float로 변경`)
 
-# emoji
+## emoji
 위 방식에 더해 이모지도 함께 쓰면 커밋할 맛도 나고 보다 보기도 편한 커밋 메시지를 남길 수 있다.
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1658170516341/99jTHV3XF.png align="center")
 git emoji 사이트([gitmoji | An emoji guide for your commit messages](https://gitmoji.dev/))를 참고했다. 물론 위 사이트의 설명에 맞게 하려면 너무 많은 이모지를 쓰게되, 도리어 한눈에 커밋 메시지를 파악할 수 없어, 상황에 맞게 수정해 쓰고 있다.
 
 주로 사용하는 이모지는 다음과 같다.
-## 문서 및 파일
+### 문서 및 파일
 - 📝 : 문서 추가/수정
 - 🙈 : .gitignore 파일 추가/수정
 - 🔧 : 설정파일 추가/수정
 - 🚚 : 리소스(파일, 폴더) 이름/위치 변경
 
-## 코드
+### 코드
 - 🐛 : 버그/에러 수정
 - 🔨 : 코드 추가/수정
 - 🔥 : 코드/파일 삭제
@@ -56,12 +56,12 @@ git emoji 사이트([gitmoji | An emoji guide for your commit messages](https://
 - ✏️ : 타입, 이름, 문법 오류 등 수정
 - 🎨 : 코드 구조 , 형식 개선
 
-## 주석 및 로그
+### 주석 및 로그
 - 💡 : 주석 추가/수정
 - 🔊 : 로그 추가/수정
 - 🔇 : 로그 삭제
 
-## 기타
+### 기타
 - 🚧 : 진행 중인 작업
 - 🔖 : 버전 릴리즈
 - 🚑️ : hotfix
@@ -70,7 +70,7 @@ git emoji 사이트([gitmoji | An emoji guide for your commit messages](https://
 - 🗃️ : DB 관련 변경사항
 - 🏗️ : 아키텍처 변경사항
 
-# 마무리
+## 마무리
 영어로만 커밋 메시지 쓰다가, 영어와 한글을 같이 쓰다가, 이모지도 함께 쓰고. 그동안 보다 나은 커밋 메시지를 쓰기 위해 여러 과정을 거쳤다. github의 여러 커밋 메시지를 찾아본건 덤.
 
 물론 앞으로도 쓰기도 편하고 보기도 편한 커밋 메시지에 대한 고민은 계속되겠지만, 얼추 커밋 메시지 형식이 정해진 것 같아 뿌듯하다.
